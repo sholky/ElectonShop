@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.heading {
+		@apply text-xl md:text-2xl 2xl:text-5xl text-mainBlue;
+	}
+
+	.flex-center {
+		@apply flex items-center;
+	}
+	.badge {
+		@apply bg-mainYellow w-[20px] h-[20px] rounded-full  flex-center justify-center;
+	}
+
+	.layoutView {
+		@apply bg-mainBlue p-[5px] rounded-[10px] text-whiteTextColor;
+	}
+
+	@keyframes spinner {
+		0% {
+		  transform: rotate(0deg);
+		}
+		100% {
+		  transform: rotate(360deg);
+		}
+	  }
+}
